@@ -60,13 +60,13 @@ const Hero = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { margin: "-200px" });
   return (
-    <div className="hero" ref={ref}>
+    <div className="hero">
       <div className="heroSection left">
         <motion.h1
-          // initial={{ y: -100, opacity: 0 }}
-          // animate={{ y: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           variants={titeVariants}
-          animate={isInView ? "animate" : "initial"}
+          // animate={isInView ? "animate" : "initial"}
           transition={{ duration: 1 }}
           className="hTitle"
         >
@@ -74,9 +74,10 @@ const Hero = () => {
         </motion.h1>
         <motion.div
           variants={techVariants}
-          // initial="initial"
-          // animate="animate"
-          animate={isInView ? "animate" : "initial"}
+          initial="initial"
+          animate="animate"
+          
+          // animate={isInView ? "animate" : "initial"}
           className="tech"
         >
           <motion.h2>Frontend/Fullstack Developer</motion.h2>
@@ -96,7 +97,8 @@ const Hero = () => {
           </motion.div>
         </motion.div>
         <motion.a
-          href="#services"
+          
+          href="#resume"
           className="scroll"
           animate={{ y: [0, 5], opacity: [0, 1] }}
           transition={{
@@ -124,9 +126,9 @@ const Hero = () => {
         <motion.div
           className="follow"
           variants={followVariants}
-          // initial="initial"
-          // animate="animate"
-          animate={isInView ? "animate" : "initial"}
+          initial="initial"
+          animate="animate"
+          // animate={isInView ? "animate" : "initial"}
         >
           <motion.a
             href="https://www.linkedin.com/in/wyahidbadri"

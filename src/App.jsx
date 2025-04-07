@@ -10,7 +10,7 @@ function App() {
       <section id="hero">
         <Hero />
       </section>
-      <section id="#services">
+      <section id="#resume">
         <Resume />
       </section>
       <section id="#portfolio">
